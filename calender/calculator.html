@@ -38,21 +38,21 @@
         }
         
     </style>
-
+<!-- نمایش اعداد -->
     <script>
         function data(val){
-            calc.display.value = val;
+            calc.display.value += val;
 
         }
-        
+
     </script>
 </head>
 <body>
     
     <form name="calc" class="bak" action="">
         <input type="text" disabled  name="display">
-        <input type="button" value="AC">
-        <input type="button" value="C" onclick="data(this.value)">
+        <input type="button" value="AC" onclick="ac()">
+        <input type="button" value="C" onclick="c()">
         <input type="button" value="%" onclick="data(this.value)">
         <input type="button" value="~" onclick="data(this.value)">
         <input type="button" value="A9" onclick="data(this.value)">
@@ -69,7 +69,7 @@
         <input type="button" value="+" onclick="data(this.value)">
         <input type="button" value="0" onclick="data(this.value)">
         <input type="button" value="." onclick="data(this.value)">
-        <input type="button" value="=">
+        <input type="button" value="=" onclick="equal()">
         <div style="clear: both;"></div>
 
 
